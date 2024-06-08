@@ -1,0 +1,185 @@
+/* .footer {
+    width: 50%;
+    margin: 4rem auto;
+    text-align: center; */
+    /* this is going to be added from here on dowwn
+    plus the .row and .col */
+    /* width: 100%; the above was the original*/
+/* } */
+
+footer {
+    /* this is the top level and was called row */
+    width: 100%;
+    /* position: absolute; */
+    /*======== this was in the modified */
+    /* margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content: space-between; */
+    /* ==========added this part */
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    /* border-radius: 125px 125px 0 0; */
+    font-size: 13px;
+    line-height: 20px;
+    /* i am adding margin top because it is to close to other info */
+}
+
+.footer .SnS-logo {
+    width: 70px;
+
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content: space-between;
+ 
+}
+
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.col h3 {
+    width: fit-content;
+    margin: 40px;
+    position: relative;
+}
+
+
+.row .SnS-logo{
+    width: 50px;
+}
+
+.email-icons {
+    width: 25px;
+    /* border-bottom: 1px solid #ccc */
+}
+
+ul li {
+
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.social-icons .foot-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size:  42px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.social-icons .foot-icon img{
+    width: 37px;
+
+    /* padding: 0 10px; */
+}
+
+.underline{
+    /* adds a nice line the length
+     of the box it is in */
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    /* position: absolute; */
+    /*==== this was what was before the relative==== */
+    position: relative;
+    top: 10px;
+    left: 0;
+    /* the code below makes it looks as though
+    the moving line is going around by hiding
+    anything that start outside of it
+    in particular we are talking about 
+    the code keyframes -20% */
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    /* this part gives it the look of it moving */
+    animation: moving 2s linear infinite;
+}
+
+.copyRight {
+    width: 90%;
+    text-align: center;
+}
+
+@keyframes moving{
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: 100%
+    }
+}
+
+@media (max-width: 700px){
+    .copyRight {
+        bottom: unset; 
+        /* this makes it look like a grid */
+    }
+    .col {
+        flex-basis: 100%;
+        /* we want it to take up the whole row
+        on a small screen so its more like a grid
+        also we took padding off */
+    }
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+

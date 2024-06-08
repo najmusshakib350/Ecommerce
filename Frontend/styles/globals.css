@@ -1,0 +1,1207 @@
+/* Global CSS code start */
+/* React index.css  start*/
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* React index.css end */
+/* React App.css start */
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+.SnS-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#shop-now :hover {
+  font-weight: 600;
+  background-color: #606060;
+}
+
+.featured-collection {
+  margin-top: 6rem;
+}
+
+.featured-section-title {
+  font-size: 2rem;
+}
+.Rating {
+  font-size: 2rem;
+  color: #f1a50c;
+}
+.beforeRating {
+  font-size: 2rem;
+  color: #000;
+}
+.averageRating {
+  font-size: 2rem;
+  color: #f1a50c;
+}
+
+.featured-image {
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .products {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+}
+
+.featured-product {
+  margin: 10px;
+}
+
+.name-price p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+/* .SnS-btn {
+  display: block;
+  width: 100%;
+  line-height: 1.4;
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: normal;
+  margin-top: 0;
+  margin-bottom: 10px;
+  min-height: 44px;
+} */
+
+.SnS-input {
+  width: fit-content;
+  /* padding: 10px; */
+  /* margin-bottom: 1rem; */
+  border: 1px solid;
+  color: black;
+}
+
+form.SnS-form {
+  display: block;
+  padding: 2rem;
+  text-align: center;
+  /* input[type=text],
+  input[type=email],
+  input[type=password],{ */
+  width: 60%;
+  border: none;
+  /* } */
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  width: 200px;
+}
+
+.form-error {
+  border: 1px solid red;
+}
+
+btn-white-outline {
+  border: 1px solid grey;
+  margin-bottom: 1rem;
+}
+
+#buy-it-now-btn :hover {
+  background-color: #606060;
+}
+
+@media (min-width: 1024px) {
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* My code start */
+  form input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 65%;
+  }
+  /* My code end */
+}
+
+/* he imported files at 12.20 but only what he need */
+
+/* ===============this below is the original also he changed the file to App.scss to accompany bulma which we didn't add */
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* React App.css end */
+
+/* Global Css End */
+/* Landing Page css start */
+#the-start {
+  background-color: rgba(0, 0, 0);
+}
+
+.hero {
+  width: 100;
+  height: 100vh;
+  /* background-image: url('../../../assets/PrettyFlower.JPG'); */
+  background: linear-gradient(
+      rgba(248, 245, 245, 0.6),
+      rgba(205, 188, 188, 0.5)
+    ),
+    /* linear so that it has a dark layer
+    and makes it easier for user 2 read
+     text in front of it */
+      url("./../assets/homeBackground.png") center center/cover no-repeat !important;
+  /* background-size: 150%; */
+  /* instead of cover we increased the size to zoom in on that beautiful flower */
+  /* seems to mess up when changing views */
+  font-family: "Roboto", sans-serif;
+}
+
+.landing-logo {
+  width: 100px;
+  padding: 30px;
+}
+
+.navbar {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #b319ac;
+  cursor: pointer;
+  position: relative;
+  padding: 0 10px;
+  font-size: 14px;
+  transition: font-size 0.3s 0.5s;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar a:after {
+  content: "";
+  position: absolute;
+  background-color: #f0dfe7;
+  height: 3px;
+  width: 0;
+  left: 0px;
+  bottom: -5px;
+  font-size: 13px;
+  transition: 0.5s;
+}
+
+.navbar a:hover:after {
+  width: 100%;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #0e0200 !important;
+  font-weight: heavy;
+  margin: auto;
+  max-width: 330px;
+  line-height: 3rem;
+  /* justify-content: center; */
+}
+
+.shop-now-btn {
+  text-align: center;
+}
+
+/* .SnS-btn {
+    padding: 7px;
+    border: 2px solid #F0DFE7;
+    border-radius: 20px;
+    color: #F0DFE7;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+} */
+
+.SnS-btn {
+  display: block;
+  /* width: 100%; */
+  line-height: 1.4;
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: normal;
+  margin-top: 0;
+  margin-bottom: 10px;
+  min-height: 44px;
+  border-radius: 20px;
+}
+
+/* .container {
+    display: flex;
+    flex-direction: row;
+} */
+
+.innerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.innerContainer p {
+  color: #0e0200 !important;
+  text-align: center;
+  flex: 1;
+  max-width: 330px;
+  line-height: 1.5rem;
+}
+
+/* =============================== */
+
+/* .nav-menu :focus, :hover, :visited {
+        color: black;
+        text-decoration: none;
+    } */
+
+.navbar .logo {
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: auto;
+  text-align: center;
+}
+
+/* =======For mobile users============ */
+
+@media (max-width: 600px) {
+  .hero-image {
+    font-size: 2.5rem;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+/* Landing Page css end */
+
+/* Cart-icon.css code start */
+.cart-container {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.cart-container img {
+  width: 40px;
+}
+
+.cart-count {
+  margin-left: -10px;
+  background-color: black;
+  color: white;
+  padding-right: 4px;
+  border-radius: 10px;
+}
+
+/* Cart-icon.css code end */
+/* Footer css code start */
+/* .footer {
+    width: 50%;
+    margin: 4rem auto;
+    text-align: center; */
+/* this is going to be added from here on dowwn
+    plus the .row and .col */
+/* width: 100%; the above was the original*/
+/* } */
+
+footer {
+  /* this is the top level and was called row */
+  width: 100%;
+  /* position: absolute; */
+  /*======== this was in the modified */
+  /* margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content: space-between; */
+  /* ==========added this part */
+  bottom: 0;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 100px 0 30px;
+  /* border-radius: 125px 125px 0 0; */
+  font-size: 13px;
+  line-height: 20px;
+  /* i am adding margin top because it is to close to other info */
+}
+
+.footer .SnS-logo {
+  width: 70px;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.col h3 {
+  width: fit-content;
+  margin: 40px;
+  position: relative;
+}
+
+.row .SnS-logo {
+  width: 50px;
+}
+
+.email-icons {
+  width: 25px;
+  /* border-bottom: 1px solid #ccc */
+}
+
+ul li {
+}
+
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+
+form .far {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.social-icons .foot-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 42px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.social-icons .foot-icon img {
+  width: 37px;
+
+  /* padding: 0 10px; */
+}
+
+.underline {
+  /* adds a nice line the length
+     of the box it is in */
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  /* position: absolute; */
+  /*==== this was what was before the relative==== */
+  position: relative;
+  top: 10px;
+  left: 0;
+  /* the code below makes it looks as though
+    the moving line is going around by hiding
+    anything that start outside of it
+    in particular we are talking about 
+    the code keyframes -20% */
+}
+
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  /* this part gives it the look of it moving */
+  animation: moving 2s linear infinite;
+}
+
+.copyRight {
+  width: 90%;
+  text-align: center;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .copyRight {
+    bottom: unset;
+    /* this makes it look like a grid */
+  }
+  .col {
+    flex-basis: 100%;
+    /* we want it to take up the whole row
+        on a small screen so its more like a grid
+        also we took padding off */
+  }
+  .col:nth-child(2),
+  .col:nth-child(3) {
+    flex-basis: 100%;
+  }
+}
+
+/* Footer css code end */
+/* Header css code start */
+.nav-menu {
+  display: flex;
+  padding: 3px 5px 3px 4px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+}
+
+.nav-menu :focus,
+.nav-menu :hover,
+.nav-menu :visited {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-menu img {
+  font-size: 1.5rem;
+  width: 50px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  margin-left: auto;
+}
+
+.nav-menu li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.nav-menu .SnS-logo img {
+  width: 70px;
+  height: 50px;
+  padding: 5px 0 0 5px;
+}
+
+/* Below is how to code for scss/less would work research it  
+/* .nav-menu{
+    display: flex;
+    padding: 1rem,
+
+    '& a' {
+        text-decoration: none;
+        &:focus, &:hover, &:visited {
+            color: black;
+        }
+        
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    ul{
+        list-style: none;
+        margin: 0;
+        margin-left: auto,
+
+        "li" {
+            display: inline-block;
+            margin: 0 1rem;
+            
+        }
+    }
+
+} */
+
+/* Header css code end */
+/* Feature css code start */
+.featured-product {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1rem;
+  margin-left: 1rem 0;
+}
+
+.is-white {
+  background-color: white;
+  color: black;
+}
+
+.is-black {
+  background-color: black;
+  color: white;
+}
+
+.featured-image img {
+  width: 190px;
+  height: 180px;
+}
+/* Feature css code end */
+/* Hero css code start */
+.hero-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    /* linear so that it has a dark layer
+    and makes it easier for user 2 read
+     text in front of it */
+      url("./../assets/PrettyFlower.JPG") center/cover no-repeat;
+  width: 100vw;
+  height: 400px;
+}
+/* 
+.hero-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #F0DFE7;
+    font-weight: heavy;
+    margin: auto;
+} */
+
+@media (min-width: 1024px) {
+  .hero-image {
+    font-size: 2.5rem;
+  }
+}
+/* 
+.shop-now-btn {
+    text-align: center;
+} */
+
+/* Hero css code end */
+/* Checkout.css code start */
+.checkout {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h4 {
+  margin: 0;
+  margin-top: 3rem;
+}
+
+button {
+  width: 200px;
+  margin: 2px auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.stripe-card {
+  margin: 1rem 0;
+}
+
+.card-number {
+  margin-top: 2rem;
+}
+
+.card-element {
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 10px;
+  width: 55px;
+  margin: 0 auto;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.5rem;
+}
+/* Checkout css code end */
+/* Popup css code start */
+.popup {
+  position: fixed;
+  top: 10vh;
+  left: 28vw;
+  width: 39%;
+  height: 40vh;
+  background: white;
+  /* display: flex; */
+  /* taking flex off allows the pop up 
+    to be closer to  the email*/
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-inner {
+  position: absolute;
+  background: linear-gradient(135deg, wheat, #9d4de6);
+  color: white;
+  text-align: center;
+  padding: 40px 80px;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.17);
+  max-width: 33vw;
+}
+
+.popup-inner .close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  padding: 0;
+  width: 50px;
+  background: transparent;
+  border: none;
+  color: wheat;
+}
+
+.popup .popup-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  background: black;
+}
+
+.popupContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8;
+  color: wheat;
+}
+
+.cpnCode {
+  border: 1px dashed white;
+  padding: 4px 20px;
+  border-right: 0;
+}
+
+.cpnBtn {
+  border: 1px solid white;
+  background: white;
+  padding: 5px 10px;
+  color: #7158fe;
+  cursor: pointer;
+}
+
+.cpnLogo {
+  padding: 15px;
+}
+
+.coupon-row {
+  display: flex;
+  align-items: center;
+  margin: 25px auto;
+  width: fit-content;
+}
+
+@media screen and (max-width: 570px) {
+  .coupon-row {
+    display: grid;
+  }
+  /* .cpnCode {
+        border: 1px dashed white;
+    } */
+}
+
+/* Popup css code end */
+/* tearmsAndPolicy css code start */
+ol.alpha {
+  list-style-type: lower-alpha;
+}
+
+ol.roman {
+  list-style-type: lower-roman;
+}
+
+.finePrint {
+  text-align: left;
+  padding: 15px;
+}
+
+/* tearmsAndPolicy css code end */
+
+/* cart-page.css code start */
+h1,
+.empty-cart {
+  text-align: center;
+}
+
+.cart-item {
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 2rem;
+  padding: 1 rem;
+}
+
+.item-img img {
+  width: 150px;
+}
+
+.name-price .h4 {
+  margin: 0;
+}
+
+.name-price h4 p {
+  font-size: 1 rem;
+  font-weight: normal;
+}
+
+.btns-container button {
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 5px;
+  margin-right: 5px;
+}
+
+.btn-increase {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+
+.btn-trash {
+  color: white;
+  background-color: transparent;
+}
+
+.btn-decrease {
+  color: white;
+  background-color: transparent;
+}
+
+.btn-trash img,
+.btn-increase img,
+.btn-decrease img {
+  width: 30px;
+}
+
+.total-container {
+  margin: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 1024) {
+  .cart-page {
+    display: flex;
+    justify-content: center;
+  }
+  .total-container {
+    text-align: center;
+  }
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  div {
+    margin: 1 rem;
+  }
+  .name-price {
+    width: 200px;
+  }
+}
+/* cart-page.css code end */
+
+/* Landing Page css code start */
+#the-start {
+  background-color: rgba(0, 0, 0);
+}
+
+.hero {
+  width: 100;
+  height: 100vh;
+  /* background-image: url('../../../assets/PrettyFlower.JPG'); */
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    /* linear so that it has a dark layer
+    and makes it easier for user 2 read
+     text in front of it */
+      url("./../assets/PrettyFlower.JPG") center center/cover no-repeat;
+  /* background-size: 150%; */
+  /* instead of cover we increased the size to zoom in on that beautiful flower */
+  /* seems to mess up when changing views */
+  font-family: "Roboto", sans-serif;
+}
+
+.landing-logo {
+  width: 100px;
+  padding: 30px;
+}
+
+.navbar {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0e0200 !important;
+  cursor: pointer;
+  position: relative;
+  padding: 0 10px;
+  font-size: 16px;
+  transition: font-size 0.3s 0.5s;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar a:after {
+  content: "";
+  position: absolute;
+  background-color: #f0dfe7;
+  height: 3px;
+  width: 0;
+  left: 0px;
+  bottom: -5px;
+  font-size: 13px;
+  transition: 0.5s;
+}
+
+.navbar a:hover:after {
+  width: 100%;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #f0dfe7;
+  font-weight: heavy;
+  margin: auto;
+  max-width: 330px;
+  line-height: 3rem;
+  /* justify-content: center; */
+}
+
+.shop-now-btn {
+  text-align: center;
+}
+
+/* .SnS-btn {
+    padding: 7px;
+    border: 2px solid #F0DFE7;
+    border-radius: 20px;
+    color: #F0DFE7;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+} */
+
+.SnS-btn {
+  display: block;
+  /* width: 100%; */
+  line-height: 1.4;
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: normal;
+  margin-top: 0;
+  margin-bottom: 10px;
+  min-height: 44px;
+  border-radius: 20px;
+}
+
+/* .container {
+    display: flex;
+    flex-direction: row;
+} */
+
+.innerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.innerContainer p {
+  color: #b319ac;
+  text-align: center;
+  flex: 1;
+  max-width: 330px;
+  line-height: 1.5rem;
+}
+
+/* =============================== */
+
+/* .nav-menu :focus, :hover, :visited {
+        color: black;
+        text-decoration: none;
+    } */
+
+.navbar .logo {
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: auto;
+  text-align: center;
+}
+
+/* =======For mobile users============ */
+
+@media (max-width: 600px) {
+  .hero-image {
+    font-size: 2.5rem;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+}
+/* Landing page css code end */
+
+/* shop.css code start */
+.product-list-container {
+  margin: 3rem 0;
+}
+
+.product-list-title {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+/* .product-list div {
+    div {margin: 1rem;
+    cursor: pointer;
+    }
+} */
+
+.product-list > div {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+/* 
+@media(min-width: 1024px) {
+    .product-list-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5rem;    
+    div {
+        flex: 0 0 300px;
+        }
+    }
+} */
+/* need help writing this coded below to be the above which is in scss */
+/* took long enough but i studied and got it down pack */
+
+@media screen and (min-width: 500px) {
+  .product-list-container .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5rem;
+  }
+  .product-list-container .product-list {
+    flex: 0 0 200px;
+  }
+}
+
+/* shop.css code end */
+/* singleProduct.css code start */
+.single-product-container {
+  margin: 2rem 0;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .single-product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-image img,
+  .product-details {
+    flex: 0 0 400px;
+  }
+}
+
+.single-product-container .product-image {
+  margin: 2rem;
+}
+
+.single-product-container .product-details .name-price {
+  margin: 1rem 0;
+}
+
+.single-product-container .product-details .add-to-cart-btns {
+  margin: 2rem 0;
+}
+
+.single-product-container .product-details .product-description > p {
+  line-height: 1.5;
+}
+
+.product-image img {
+  /* width: 180px;
+    height: 190px */
+  width: 240px;
+  height: 190px;
+}
+/* this was added below to make it better */
+
+.product-details .name-price {
+  margin: 1rem 0;
+}
+
+.add-to-cart-btns {
+  margin: 2rem 0;
+}
+
+.product-description p {
+  line-height: 1.5;
+}
+
+.product-description .description-title {
+  font-weight: 700;
+}
+
+.product-details .ingredients {
+  font-weight: 700;
+}
+
+.fine-print {
+  font-size: 10px;
+}
+/* singleProduct.css code end */
+
+/* Alert box  css start*/
+.alertBoxCss {
+  position: absolute !important;
+  top: 0 !important;
+  left: 50% !important;
+  transform: translate(-50%, 0) !important;
+}
+/* Alert box css end */
+
+/* Review card image css code start */
+.review_card_image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin-right: 0.5rem;
+}
+/* Review card image css code end */
+/* UserPhoto css start */
+.user_image {
+  width: 4rem !important;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+/* UserPhoto css end */
